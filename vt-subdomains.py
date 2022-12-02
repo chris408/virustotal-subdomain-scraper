@@ -16,7 +16,7 @@ def main(domain, apikey):
         print("No domains found for %s" % domain)
         exit(0)
     except(requests.ConnectionError):
-        print("Could not connect to www.virtustotal.com", file=sys.stderr)
+        print("Could not connect to www.virustotal.com", file=sys.stderr)
         exit(1)
 
     for domain in domains:
